@@ -23,7 +23,7 @@ body {
 }
 
 .parallax:nth-of-type(1) {
-  background: url("/assets/Header.jpg") no-repeat center;
+  background: url("./assets/Header.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 475px;
