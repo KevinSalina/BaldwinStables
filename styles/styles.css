@@ -30,8 +30,8 @@ body {
 }
 
 .parallax:nth-of-type(2) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/assets/Parallax2.jpg") no-repeat center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/Parallax2.jpg") no-repeat center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/Parallax2.jpg") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/Parallax2.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 800px;
@@ -161,17 +161,17 @@ section.learn-more .learn-more-container .learn-more-card .card-img {
 }
 
 section.learn-more .learn-more-container .learn-more-card .card-img.card-img-one {
-  background: url("/assets/Our-team.jpg") no-repeat center;
+  background: url("../assets/Our-team.jpg") no-repeat center;
   background-size: cover;
 }
 
 section.learn-more .learn-more-container .learn-more-card .card-img.card-img-two {
-  background: url("/assets/Stables.jpg") no-repeat center;
+  background: url("../assets/Stables.jpg") no-repeat center;
   background-size: cover;
 }
 
 section.learn-more .learn-more-container .learn-more-card .card-img.card-img-three {
-  background: url("/assets/Competition.jpg") no-repeat center;
+  background: url("../assets/Competition.jpg") no-repeat center;
   background-size: cover;
 }
 

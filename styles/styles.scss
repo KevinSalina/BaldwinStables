@@ -31,7 +31,7 @@ body{
         height: 475px;
     }
     &:nth-of-type(2){
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/Parallax2.jpg') no-repeat center;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/Parallax2.jpg') no-repeat center;
         background-size: cover;
         background-attachment: fixed;
         height: 800px;
@@ -125,15 +125,15 @@ section.learn-more{
                 max-height: 400px;
 
                 &.card-img-one{
-                    background: url('/assets/Our-team.jpg') no-repeat center;
+                    background: url('../assets/Our-team.jpg') no-repeat center;
                     background-size: cover;
                 }
                 &.card-img-two{
-                    background: url('/assets/Stables.jpg') no-repeat center;
+                    background: url('../assets/Stables.jpg') no-repeat center;
                     background-size: cover;
                 }
                 &.card-img-three{
-                    background: url('/assets/Competition.jpg') no-repeat center;
+                    background: url('../assets/Competition.jpg') no-repeat center;
                     background-size: cover;
                 }
             }
