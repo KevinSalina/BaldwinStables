@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,600&family=Roboto+Condensed:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+  font-family: 'Bitter', serif;
+  color: #222;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.parallax {
+  background: url("/assets/Header.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 150px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  max-width: 1000px;
+}
+
+header nav .nav-item-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+header nav .nav-item-group .nav-item {
+  cursor: pointer;
+  padding: .5rem;
+}
+
+header nav .main-title {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+}
+
+section.learn-more {
+  text-align: center;
+  margin-top: 3rem;
+  height: 1000px;
+}
+
+section.learn-more .homepage-title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: .3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+section.learn-more .homepage-subtext {
+  font-size: 1.25rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 500;
+  letter-spacing: .5rem;
+}
+
+section.learn-more .learn-more-container {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+
+section.learn-more .learn-more-container .learn-more-card {
+  background: yellowgreen;
+  width: 30vw;
+  max-width: 350px;
+}
+
+section.learn-more .learn-more-container .learn-more-card .card-img {
+  width: 100%;
+  height: 30vw;
+  max-height: 350px;
+  background: url("/assets/Our-team.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media (max-width: 640px) {
+  section.learn-more .learn-more-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.learn-more .learn-more-container .learn-more-card {
+    width: 100vw;
+    max-width: 350px;
+  }
+  section.learn-more .learn-more-container .learn-more-card .card-img {
+    width: 100%;
+    height: 100vw;
+    max-height: 350px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
