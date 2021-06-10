@@ -14,6 +14,14 @@ html {
 
 body {
   min-height: 100vh;
+  overflow-x: hidden;
+}
+
+html .active,
+body .active {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
 .container {
@@ -109,11 +117,21 @@ header nav .nav-item-group-mobile {
           flex-direction: column;
   gap: 1rem;
   position: fixed;
-  left: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  left: 0px;
   top: 0px;
   background: white;
   height: 100vh;
-  padding: 2rem;
+  width: 100%;
+  padding: 4rem 2rem;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+header nav .nav-item-group-mobile.active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 header nav .nav-item-group-mobile .nav-item {
@@ -128,10 +146,16 @@ header nav .nav-item-group-mobile .nav-item {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1.2rem;
+  opacity: 0;
+  height: auto;
 }
 
 header nav .nav-item-group-mobile .nav-item:hover {
   color: rgba(34, 34, 34, 0.4);
+}
+
+header nav .nav-item-group-mobile .nav-item.active {
+  opacity: 1;
 }
 
 header nav .main-title {
@@ -149,6 +173,7 @@ header nav .hamburger {
   display: none;
   position: relative;
   top: 5.25px;
+  cursor: pointer;
 }
 
 header nav .hamburger .line {
@@ -172,9 +197,6 @@ header nav .hamburger .line {
   }
   header nav .main-title {
     text-align: left;
-  }
-  header nav .nav-item-group-mobile {
-    width: 100%;
   }
   header nav .hamburger {
     display: block;
