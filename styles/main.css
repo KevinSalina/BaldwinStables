@@ -249,7 +249,7 @@ footer {
 
 .parallax#parallax1 {
   background: url("../assets/slideshow/Header.jpg") no-repeat center;
-  height: 600px;
+  height: 475px;
   position: relative;
   -webkit-transition: background .5s linear;
   transition: background .5s linear;
@@ -280,7 +280,7 @@ footer {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 55, 77, 0.5)), to(rgba(30, 55, 77, 0.5))), url("../assets/Parallax2.jpg") no-repeat center;
   background: linear-gradient(rgba(30, 55, 77, 0.5), rgba(30, 55, 77, 0.5)), url("../assets/Parallax2.jpg") no-repeat center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
