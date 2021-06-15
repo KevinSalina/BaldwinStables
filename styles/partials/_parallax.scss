@@ -1,0 +1,42 @@
+.parallax{
+    &#parallax1{
+        background: url('../assets/slideshow/Header.jpg') no-repeat center;
+        height: 600px;
+        position: relative;
+        transition: background .5s linear;
+
+        &.active{
+            z-index: -10;
+        }
+
+        .ss-btn{
+            cursor: pointer;
+            position: absolute;
+            color: white;
+            font-size: 1.5rem;
+
+            &.ss-left{
+                top: 50%;
+                left: 2rem;
+            }
+
+            &.ss-right{
+                top: 50%;
+                right: 2rem;
+            }
+            
+        }
+    
+    }
+    &#parallax2{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/Parallax2.jpg') no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3.5rem;
+
+    }
+}

@@ -9,7 +9,7 @@
 html {
   font-size: 12px;
   font-family: 'Bitter', serif;
-  color: #222;
+  color: #1E374D;
 }
 
 body {
@@ -225,10 +225,10 @@ header nav .hamburger.active .line3 {
   }
 }
 
-.container {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 2rem;
+footer {
+  background-color: #222;
+  height: 100px;
+  width: 100%;
 }
 
 .parallax#parallax1 {
@@ -534,9 +534,9 @@ section.social-media .photo-gallery .photo-gallery-photo {
   }
 }
 
-footer {
-  background-color: #222;
-  height: 100px;
-  width: 100%;
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

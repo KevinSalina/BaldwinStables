@@ -1,3 +1,5 @@
+@import 'variables';
+
 html .active,
 body .active{
     margin: 0;
@@ -82,8 +84,7 @@ header{
             }
 
        }
-
-
+       
         .main-title{
             flex-grow: 2;
             text-align: center;
@@ -135,7 +136,7 @@ header{
     }
 }
 
-@media (max-width: 900px){
+@include mdScreen{
     header{
         height: 75px;
         position: fixed;
@@ -168,5 +169,4 @@ header{
             margin-top: 75px;
         }
     }
-  
 }
