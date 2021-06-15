@@ -17,6 +17,22 @@ body {
   overflow-x: hidden;
 }
 
+.btn {
+  background: none;
+  border-radius: 5px;
+  width: 150px;
+  height: 45px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: .25rem;
+  font-size: .9rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
 html .active,
 body .active {
   margin: 0;
@@ -66,7 +82,7 @@ header nav .nav-item-group .nav-item {
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
   text-decoration: none;
-  color: #222;
+  color: #1E374D;
 }
 
 header nav .nav-item-group .nav-item:hover {
@@ -109,7 +125,7 @@ header nav .nav-item-group-mobile .nav-item {
   -webkit-transition: all .1s linear;
   transition: all .1s linear;
   text-decoration: none;
-  color: #222;
+  color: #1E374D;
   font-family: 'Roboto Condensed', sans-serif;
   letter-spacing: .3rem;
   text-transform: uppercase;
@@ -151,7 +167,7 @@ header nav .hamburger .line {
   width: 25px;
   height: 2px;
   margin: 4px;
-  background: #222;
+  background: #1E374D;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -226,7 +242,7 @@ header nav .hamburger.active .line3 {
 }
 
 footer {
-  background-color: #222;
+  background-color: #1E374D;
   height: 100px;
   width: 100%;
 }
@@ -261,8 +277,8 @@ footer {
 }
 
 .parallax#parallax2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/Parallax2.jpg") no-repeat center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/Parallax2.jpg") no-repeat center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 55, 77, 0.5)), to(rgba(30, 55, 77, 0.5))), url("../assets/Parallax2.jpg") no-repeat center;
+  background: linear-gradient(rgba(30, 55, 77, 0.5), rgba(30, 55, 77, 0.5)), url("../assets/Parallax2.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 800px;
@@ -362,21 +378,11 @@ section.learn-more .learn-more-container .learn-more-card .card-text {
 }
 
 section.learn-more .learn-more-container .learn-more-card .btn, section.learn-more .learn-more-container .learn-more-card .learn-more-button {
-  background: none;
-  border: 2px solid #222;
-  width: 150px;
-  height: 45px;
+  border: 2px solid #1E374D;
+  color: #1E374D;
   text-transform: uppercase;
   font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 400;
-  letter-spacing: .25rem;
-  font-size: .9rem;
   margin-top: auto;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
 }
 
 section.learn-more .learn-more-container .learn-more-card .btn a, section.learn-more .learn-more-container .learn-more-card .learn-more-button a {
@@ -385,7 +391,7 @@ section.learn-more .learn-more-container .learn-more-card .btn a, section.learn-
 }
 
 section.learn-more .learn-more-container .learn-more-card .btn:hover, section.learn-more .learn-more-container .learn-more-card .learn-more-button:hover {
-  background: #222;
+  background: #1E374D;
   color: white;
   cursor: pointer;
 }
@@ -453,19 +459,8 @@ section.competition-gallery .cg-card .btn, section.competition-gallery .cg-card 
   background: none;
   border: 2px solid white;
   color: white;
-  width: 150px;
-  height: 45px;
-  text-transform: uppercase;
   font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 700;
-  letter-spacing: .25rem;
-  font-size: .9rem;
   margin-top: auto;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
 }
 
 section.competition-gallery .cg-card .btn a, section.competition-gallery .cg-card .cg-card-button a {
@@ -475,7 +470,7 @@ section.competition-gallery .cg-card .btn a, section.competition-gallery .cg-car
 
 section.competition-gallery .cg-card .btn:hover, section.competition-gallery .cg-card .cg-card-button:hover {
   background: white;
-  color: #222;
+  color: #1E374D;
   cursor: pointer;
 }
 

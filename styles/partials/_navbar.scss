@@ -32,7 +32,7 @@ header{
                 padding: .5rem;
                 transition: all .2s linear;
                 text-decoration: none;
-                color: #222;
+                color: $primary-color;
 
                 &:hover{
                     color:rgba(34,34,34,.4)
@@ -64,7 +64,7 @@ header{
                 padding: .5rem;
                 transition: all .1s linear;
                 text-decoration: none;
-                color: #222;
+                color: $primary-color;
                 font-family: 'Roboto Condensed', sans-serif;
                 letter-spacing: .3rem;
                 text-transform: uppercase;
@@ -104,7 +104,7 @@ header{
                 width: 25px;
                 height: 2px;
                 margin: 4px;
-                background: #222;
+                background: $primary-color;
                 transition: all .3s ease;
             }
 
