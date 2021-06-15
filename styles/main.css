@@ -280,7 +280,7 @@ footer {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 55, 77, 0.5)), to(rgba(30, 55, 77, 0.5))), url("../assets/Parallax2.jpg") no-repeat center;
   background: linear-gradient(rgba(30, 55, 77, 0.5), rgba(30, 55, 77, 0.5)), url("../assets/Parallax2.jpg") no-repeat center;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -292,6 +292,12 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 3.5rem;
+}
+
+@media (max-width: 450px) {
+  .parallax#parallax2 {
+    background-attachment: scroll;
+  }
 }
 
 section.learn-more {

@@ -87,14 +87,25 @@ slideShowButtons.forEach(btn => {
 
 // Helper SlideShow CSS Function
 function slideShowCSS() {
-    slideShowDisplay.style.cssText = `
-    background: url(${slideShowImages[i]}) center;
-    background-size: cover;
-    background-attachment: fixed;
-    `
+    if (window.innerWidth > 450) {
+        console.log('greater than 450')
+        slideShowDisplay.style.cssText = `
+        background: url(${slideShowImages[i]}) center;
+        background-size: cover;
+        background-attachment: fixed;
+        `
+    } else {
+        console.log('less than 450')
+        slideShowDisplay.style.cssText = `
+        background: url(${slideShowImages[i]}) center;
+        background-size: cover;
+        background-attachment: scroll;
+        `
+    }
 }
 
 
 // Call Functions
 navSlide()
 window.onload = changeSlideShow(true)
+

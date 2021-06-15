@@ -14,6 +14,12 @@ $black: #222;
     }
 }
 
+@mixin mobileScreen{
+    @media (max-width: 450px){
+        @content
+    }
+}
+
 @mixin photoGallery{
     @media (min-width: 1120px) {
         @content;
