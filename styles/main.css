@@ -51,6 +51,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 150px;
+  z-index: 100;
 }
 
 header nav {
