@@ -1,13 +1,12 @@
 section.learn-more{
     text-align: center;
-    margin: 3.5rem 0;
 
     .homepage-title{
         text-transform: uppercase;
         font-size: 3rem;
         letter-spacing: .3rem;
         font-weight: 700;
-        margin-bottom: 2.5rem;
+        margin-bottom: 2rem;
     }
 
     .homepage-subtext{
@@ -18,10 +17,10 @@ section.learn-more{
     }
 
     .learn-more-container{
-        margin-top: 2.5rem;
+        margin-top: 2rem;
         display: flex;
         justify-content: center;
-        gap: 2.5rem;
+        gap: 2rem;
 
         .learn-more-card{
             width: 30vw;
@@ -114,7 +113,7 @@ section.competition-gallery{
         color: white;
         display: flex;
         flex-direction: column;
-        gap: 2.5rem;
+        gap: 2rem;
         align-items: center;
         
 
@@ -155,7 +154,7 @@ section.competition-gallery{
 @include smScreen{
     section.competition-gallery{
         flex-direction: column;
-        gap: 2.5rem;
+        gap: 2rem;
     }
 }
 
@@ -167,22 +166,22 @@ section.social-media{
         font-size: 1.5rem;
         font-weight: 500;
         font-style: italic;
-        margin-bottom: 2.5rem;
+        margin-bottom: 2rem;
     }
 
     .social-media-title{
         font-size: 3rem;
         text-transform: uppercase;
         letter-spacing: .3rem;
-        margin-bottom: 2.5rem;
+        margin-bottom: 2rem;
     }
 
     .photo-gallery{
         display: grid;
-        gap: 1.5rem;
+        gap: 2rem;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-auto-rows: 250px;
-        margin-bottom: 2.5rem;
+        margin-bottom: 2rem;
 
         .photo-gallery-photo{
             width: 100%;

@@ -1,0 +1,87 @@
+section.about-property, section.about-join{
+    @include flexCenter;
+    flex-direction: column;
+    
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 900px;
+        gap: 2rem;
+
+        .column{
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+            flex: 1;
+
+            &.about-join-text-wrapper{
+                justify-content: center;
+            }
+
+            p{
+                padding: 1rem;
+                font-size: 1.5rem;
+                line-height: 2rem;
+                word-spacing: .25rem;
+                min-width: 300px;
+
+                &.about-property-text{
+                    margin: auto 0;
+                }
+
+                &.about-join-text{
+                    &:nth-of-type(2){
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .about-img{
+                height: 300px;
+                width: 100%;
+                min-width: 300px;
+                max-width: 800px;
+                margin: auto auto;
+                
+                &.property{
+                    background: url('../../assets/photoGallery/photo1.jpg') no-repeat center;
+                    background-size: cover;
+                }
+
+                &.join{
+                    background: url('../../assets/photoGallery/photo2.jpg') no-repeat center;
+                    background-size: cover;
+                }
+            }
+        }    
+    }
+}
+
+section.about-history{
+    @include flexCenter;
+    flex-direction: column;
+    color: white;
+
+    .history-content-container{
+        @include flexCenter;
+        flex-direction: column;
+        gap: 3rem;
+        max-width: 1200px;
+
+        p{
+            max-width: 600px;
+            padding: 1rem;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            word-spacing: .25rem;
+        }
+
+        img{
+            width: 75px;
+        }
+    }
+}
+
+
+

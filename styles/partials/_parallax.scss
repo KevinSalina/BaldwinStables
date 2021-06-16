@@ -33,12 +33,23 @@
         background-size: cover;
         background-attachment: fixed;
         height: 800px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexCenter;
         margin-bottom: 3.5rem;
 
         @include mobileScreen{
+            background-attachment: scroll;
+        }
+
+    }
+
+    &#parallax3{
+        @include flexCenter;
+        background: linear-gradient(rgba(30,55, 77, 0.5), rgba(30, 55, 77, 0.5)), url('../assets/Parallax2.jpg') no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: min-content;
+
+          @include mobileScreen{
             background-attachment: scroll;
         }
 

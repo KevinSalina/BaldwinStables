@@ -1,3 +1,11 @@
+// Main container
+.container{
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+// Button
 .btn{
     background: none;
     border-radius: 5px;
@@ -10,3 +18,66 @@
     align-self: center;
     transition: all .2s linear;
 }
+
+// Page-titles / Header
+.page-title-container{
+    width: 100%;
+    height: 300px;
+    margin-top: 0;
+    @include flexCenter;
+    
+    @include mdScreen{
+        margin-top: 75px;
+    }
+
+    .page-title{
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: .6rem;
+        text-align: center;
+        width: 100%;
+        max-width: 450px;
+        line-height: 5rem;
+        font-size: 3rem;
+    }
+
+    // Individual Page Backgrounds
+    &.about{
+        background: url('../../assets/photoGallery/photo5.jpg') no-repeat center;
+        background-size: cover;
+    }
+
+}
+    
+
+
+// Decorative Subheader
+.decorated{
+        letter-spacing: .3rem;
+        font-size: 2.5rem;
+        padding: 1rem;
+        margin-bottom: 3rem;
+        
+
+        span{
+            position: relative;
+            display: inline-block;
+            text-transform: uppercase;
+
+            &:before, &:after{
+                content: '';
+                position: absolute;
+                top: 50%;
+                border-bottom: 2px solid;
+                width: 75px; /* half of limiter*/
+                margin: 0 20px;
+            }
+
+            &:before{
+                right: 100%;
+            }
+            &:after{
+                left: 100%;
+            }
+        }
+    }
