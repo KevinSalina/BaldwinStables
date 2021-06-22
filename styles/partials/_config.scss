@@ -9,12 +9,11 @@
 html{
     font-size: 12px;
     font-family: 'Playfair Display', serif;
-    // color: $primary-color;
-    color: #f8f8ff;
+    color: $primary-color;
 }
 
 body{
     min-height: 100vh;
     overflow-x: hidden;
-    background: $primary-color;
+    background-color: $secondary-color
 }

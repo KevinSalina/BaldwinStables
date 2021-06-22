@@ -31,7 +31,7 @@
     }
 
     .page-title{
-        color: white;
+        color: $secondary-color;
         text-transform: uppercase;
         letter-spacing: .6rem;
         text-align: center;
@@ -43,7 +43,7 @@
 
     // Individual Page Backgrounds
     &.about{
-        background: linear-gradient(rgba(0,0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../assets/photoGallery/photo5.jpg') no-repeat center;
+        background: linear-gradient(rgba(0,0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/photoGallery/photo5.jpg') no-repeat center;
         background-size: cover;
     }
 

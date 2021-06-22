@@ -78,7 +78,7 @@ section.learn-more{
 
                 &:hover{
                     background: $primary-color;
-                    color: white;
+                    color: $secondary-color;
                     cursor: pointer;
                 }
             }
@@ -132,8 +132,8 @@ section.competition-gallery{
 
          .btn, .cg-card-button{
                 background: none;
-                border: 2px solid white;
-                color: white;
+                border: 2px solid $secondary-color;
+                color: $secondary-color;
                 font-family: 'Roboto Condensed', sans-serif;
                 margin-top: auto;
 

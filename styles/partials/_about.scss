@@ -63,7 +63,7 @@ section.about-property, section.about-join{
 section.about-history{
     @include flexCenter;
     flex-direction: column;
-    color: white;
+    color: $secondary-color;
 
     .history-content-container{
         @include flexCenter;

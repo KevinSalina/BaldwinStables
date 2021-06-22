@@ -12,7 +12,7 @@
         .ss-btn{
             cursor: pointer;
             position: absolute;
-            color: white;
+            color: $secondary-color;
             font-size: 1.5rem;
 
             &.ss-left{
@@ -48,6 +48,7 @@
         background-size: cover;
         background-attachment: fixed;
         height: min-content;
+        color: $secondary-color;
 
           @include mobileScreen{
             background-attachment: scroll;
