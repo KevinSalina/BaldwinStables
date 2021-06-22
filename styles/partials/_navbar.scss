@@ -15,6 +15,7 @@ header{
    padding: 2rem;
    height: 150px;
    z-index: 100;
+   color: #F1F1E6;
    
 
     nav{
@@ -44,10 +45,13 @@ header{
                 padding: .5rem;
                 transition: all .2s linear;
                 text-decoration: none;
-                color: $primary-color;
+                // color: $primary-color;
+                // color: #f8f8ff;
+                color: #F1F1E6;
 
                 &:hover{
-                    color:rgba(34,34,34,.4)
+                    // color:rgba(34,34,34,.4)
+                    color: #79373A;
                 }
             }
        }

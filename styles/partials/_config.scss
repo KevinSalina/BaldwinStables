@@ -9,10 +9,12 @@
 html{
     font-size: 12px;
     font-family: 'Playfair Display', serif;
-    color: $primary-color;
+    // color: $primary-color;
+    color: #f8f8ff;
 }
 
 body{
     min-height: 100vh;
     overflow-x: hidden;
+    background: $primary-color;
 }

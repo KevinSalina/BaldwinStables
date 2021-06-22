@@ -7,7 +7,7 @@ section.about-property, section.about-join{
         flex-wrap: wrap;
         width: 100%;
         max-width: 900px;
-        gap: 2rem;
+        gap: 3rem;
 
         .column{
             display: flex;
@@ -45,13 +45,15 @@ section.about-property, section.about-join{
                 margin: auto auto;
                 
                 &.property{
-                    background: url('../../assets/photoGallery/photo1.jpg') no-repeat center;
+                    background: url('../assets/photoGallery/photo1.jpg') no-repeat center;
                     background-size: cover;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                 }
 
                 &.join{
-                    background: url('../../assets/photoGallery/photo2.jpg') no-repeat center;
+                    background: url('../assets/photoGallery/photo2.jpg') no-repeat center;
                     background-size: cover;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                 }
             }
         }    
