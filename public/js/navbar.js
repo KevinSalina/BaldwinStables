@@ -34,4 +34,22 @@ const navSlide = () => {
     })
 }
 
+// Home Page Nav
+const homeNavSlide = () => {
+    const burger = document.querySelector('.hamburger')
+
+    burger.addEventListener('click', () => {
+        slideShowDisplay.classList.toggle('active')
+    })
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 900) {
+            slideShowDisplay.classList.remove('active')
+        }
+    })
+}
+
+
+// Call Functions
+homeNavSlide()
 navSlide()

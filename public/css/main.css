@@ -15,8 +15,13 @@ html {
 
 body {
   min-height: 100vh;
+  position: relative;
   overflow-x: hidden;
   background-color: #F1F1E6;
+}
+
+.content-wrap {
+  padding-bottom: 100px;
 }
 
 .container {
@@ -343,6 +348,8 @@ footer {
   height: 100px;
   width: 100%;
   margin-top: 10rem;
+  position: absolute;
+  bottom: 0;
 }
 
 .parallax#parallax1 {
