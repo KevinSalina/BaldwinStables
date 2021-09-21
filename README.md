@@ -1,7 +1,7 @@
 # Baldwin Stables Example Website
 A website I am working on for a small business located in Deep River, CT.
-This webiste will use Javascript, SASS, Node, Express, and be deployed via AWS when completed.
-A demo of the static site is currently viewable via the link below.
+This webiste will use Javascript, SASS, Node, Express, and be deployed via Heroku.
+A working demo of the website if available via the link below
 
 🔗 **Live preview:** [here](https://kevinsalina.github.io/BaldwinStables/)
 
@@ -16,7 +16,7 @@ A demo of the static site is currently viewable via the link below.
 * Node
 * Express
 * EJS Templating
-* AWS
+* Heroku
 * Parallax Effects
 * CSS Grid & Flexbox
 
