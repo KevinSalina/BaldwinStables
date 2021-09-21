@@ -1,88 +1,41 @@
-// Slideshow
-let i = 0;
-let slideShowImages = [];
-let time = 8000;
-let timer = null;
-let example = 0;
-const slideShowDisplay = document.querySelector(".parallax#parallax1")
-const slideShowButtons = slideShowDisplay.querySelectorAll('.ss-btn')
+const express = require("express");
+const path = require('path')
+const app = express()
+const port = 8080
 
+app.use(express.static('public'))
+app.set('view engine', 'ejs')
+app.set('views', path.join(__dirname, '/views'))
 
-slideShowImages[0] = 'assets/slideshow/Header.jpg'
-slideShowImages[1] = 'assets/slideshow/Header2.jpg'
-slideShowImages[2] = 'assets/slideshow/Header3.jpg'
-
-function changeSlideShow(ifInitial) {
-    if (!ifInitial) {
-        if (i < slideShowImages.length - 1) {
-            i++
-        } else {
-            i = 0;
-        }
-    }
-    slideShowCSS()
-    timer = setTimeout(changeSlideShow, time)
-}
-
-function clickSlideShow(e) {
-    if (this.id === 'left') {
-        if (i === 0) {
-            i = slideShowImages.length - 1
-        } else {
-            i--
-        }
-    } else {
-        if (i < slideShowImages.length - 1) {
-            i++
-        } else {
-            i = 0;
-        }
-    }
-    clearTimeout(timer)
-    slideShowCSS()
-    timer = setTimeout(changeSlideShow, time)
-}
-
-slideShowButtons.forEach(btn => {
-    btn.addEventListener('click', clickSlideShow)
+app.get('/', (req, res) => {
+    res.render('pages/index')
 })
 
-// Helper SlideShow CSS Function
-function slideShowCSS() {
-    if (window.innerWidth > 450) {
-        slideShowDisplay.style.cssText = `
-        background: url(${slideShowImages[i]}) center;
-        background-size: cover;
-        background-attachment: fixed;
-        `
-    } else {
-        slideShowDisplay.style.cssText = `
-        background: url(${slideShowImages[i]}) center;
-        background-size: cover;
-        background-attachment: scroll;
-        `
-    }
-}
+app.get('/about', (req, res) => {
+    res.render('pages/about')
+})
 
+app.get('/boarding', (req, res) => {
+    res.render('pages/boarding')
+})
 
-// Nav
-const homeNavSlide = () => {
-    const burger = document.querySelector('.hamburger')
+app.get('/events', (req, res) => {
+    res.render('pages/events')
+})
 
-    burger.addEventListener('click', () => {
-        slideShowDisplay.classList.toggle('active')
-    })
+app.get('/lesson-programs', (req, res) => {
+    res.render('pages/lesson-programs')
+})
 
-    window.addEventListener('resize', () => {
-        if (window.innerWidth > 900) {
-            slideShowDisplay.classList.remove('active')
-        }
-    })
-}
+app.get('/training', (req, res) => {
+    res.render('pages/training')
+})
 
+app.get('*', (req, res) => {
+    res.render('pages/error')
+})
 
-// Call Functions
-homeNavSlide()
-window.onload = changeSlideShow(true)
-
-
+// Set up Server
+app.listen(port, () => {
+    console.log(`Bladwin Stables listening on port ${port}`)
+})
