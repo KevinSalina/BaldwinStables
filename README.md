@@ -3,7 +3,7 @@ A website I am working on for a small business located in Deep River, CT.
 This webiste will use Javascript, SASS, Node, Express, and be deployed via Heroku.
 A working demo of the website if available via the link below
 
-🔗 **Live preview:** [here](https://kevinsalina.github.io/BaldwinStables/)
+🔗 **Live preview:** [here](https://floating-scrubland-16558.herokuapp.com/)
 
 ## Built with
 
