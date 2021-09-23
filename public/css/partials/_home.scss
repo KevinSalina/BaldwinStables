@@ -64,6 +64,10 @@ section.learn-more{
                 word-spacing: .25rem;
             }
 
+            a.btn-link{
+                margin-top: auto;
+            }
+
             .btn, .learn-more-button{
                 border: 2px solid $primary-color;
                 color: $primary-color;
@@ -71,10 +75,10 @@ section.learn-more{
                 font-family: 'Roboto Condensed', sans-serif;
                 margin-top: auto;
 
-                & a{
-                    text-decoration: none;
-                    color: inherit
-                }
+                // & a{
+                //     text-decoration: none;
+                //     color: inherit
+                // }
 
                 &:hover{
                     background: $primary-color;

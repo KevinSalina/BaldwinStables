@@ -5,6 +5,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -28,6 +29,12 @@ body {
   max-width: 100%;
   margin: 2rem auto;
   padding: 2rem;
+}
+
+a.btn-link {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .btn {
@@ -513,17 +520,16 @@ section.learn-more .learn-more-container .learn-more-card .card-text {
   word-spacing: .25rem;
 }
 
+section.learn-more .learn-more-container .learn-more-card a.btn-link {
+  margin-top: auto;
+}
+
 section.learn-more .learn-more-container .learn-more-card .btn, section.learn-more .learn-more-container .learn-more-card .learn-more-button {
   border: 2px solid #1E374D;
   color: #1E374D;
   text-transform: uppercase;
   font-family: 'Roboto Condensed', sans-serif;
   margin-top: auto;
-}
-
-section.learn-more .learn-more-container .learn-more-card .btn a, section.learn-more .learn-more-container .learn-more-card .learn-more-button a {
-  text-decoration: none;
-  color: inherit;
 }
 
 section.learn-more .learn-more-container .learn-more-card .btn:hover, section.learn-more .learn-more-container .learn-more-card .learn-more-button:hover {
